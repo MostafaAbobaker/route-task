@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './compontnts/users/users.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomerChartComponent } from './compontnts/customerChart/customer-chart/customer-chart.component';
+
+import { ChartModule } from 'primeng/chart';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +19,8 @@ import { CustomerChartComponent } from './compontnts/customerChart/customer-char
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
